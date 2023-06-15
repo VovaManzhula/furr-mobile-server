@@ -7,9 +7,7 @@ export class VetController {
   constructor(private vetService: VetService) {}
 
   @Get()
-  findAll(): Promise<Vet[]> {
+  async findAll(): Promise<Vet[]> {
     return this.vetService.findAll();
   }
-
- 
 }

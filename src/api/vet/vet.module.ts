@@ -6,7 +6,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
   imports: [TypeOrmModule.forFeature([Vet])],
-  providers: [VetService],
+  providers: [VetService], 
   controllers: [VetController],
 })
 export class VetModule {}

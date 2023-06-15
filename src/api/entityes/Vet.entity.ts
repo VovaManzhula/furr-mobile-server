@@ -37,4 +37,6 @@ export class Vet {
 
   @Column({ default: '0' })
   rate: string;
+  @Column({ name: 'slots' })
+  slots: number;
 }
